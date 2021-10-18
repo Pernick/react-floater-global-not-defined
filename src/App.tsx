@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Joyride, { Step } from "react-joyride";
+import Floater from "react-floater";
+
 import "./App.css";
 
 const steps: Step[] = [
@@ -30,6 +32,9 @@ export function App() {
       <header>
         <h2 className="first-step">Cities</h2>
         <button onClick={() => setTourOpen((s) => !s)}>Take Tour</button>
+        <Floater content="This is the Floater content">
+          <span>click me</span>
+        </Floater>
       </header>
 
       <section>
